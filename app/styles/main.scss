@@ -11,6 +11,7 @@ $helvetica-neue-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $mbl-gutter: 1.111rem;
 $mbl-gutter-dbl: $mbl-gutter*2;
+$mbl-gutter-trip: $mbl-gutter*3;
 $mbl-gutter-quad: $mbl-gutter-dbl*2;
 $mbl-gutter-octo: $mbl-gutter-quad*2;
 
@@ -249,11 +250,21 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-
+  .skills-card {
+    float: left;
+    width: 50%;
+  }
+  .section-footer {
+    bottom: -$mbl-gutter-trip;
+    border-top: $mbl-gutter-trip solid;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-
+  .section-footer {
+    bottom: -$mbl-gutter-quad;
+    border-top: $mbl-gutter-quad solid;
+  }
 }
 
 @media screen and (min-width: 1224px) {
