@@ -26,10 +26,13 @@ html, body {
   font-family: $helvetica-neue-font-stack;
   height: 100%;
   width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+  font-weight: normal;
 }
 
 // Helpers
@@ -155,6 +158,9 @@ header {
   .section-footer {
     border-top-color: slateblue;
   }
+  h2, p {
+    color: #ffffff;
+  }
 }
 
 .about-me {
@@ -250,6 +256,14 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .intro {
+    h2 {
+      font-size: 2.667rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
   .skills-card {
     float: left;
     width: 50%;
@@ -258,6 +272,7 @@ header {
     bottom: -$mbl-gutter-trip;
     border-top: $mbl-gutter-trip solid;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
